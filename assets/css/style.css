@@ -16,7 +16,7 @@ img {
     bottom: 20px;
     width: 250px;
     background: #4AAAA5;
-    height: 30px;   
+    height: 30px;
     text-align: center;
     margin: 20px;
     color: #FFFFFF;
@@ -24,16 +24,8 @@ img {
 }
 
 footer {
-    /* position: relative; */
-    /* clear: both; */
-    /* left: 0; */
-    /* bottom: 0; */
-    /* width: 100%; */
-    /* margin: 0; */
-    /* padding: 0; */
     border-top: 8px solid #4aaaa5;
     background-color: #666666;
-    /* height: 50px; */
     position: fixed;
     right: 0;
     bottom: 0;
@@ -41,7 +33,8 @@ footer {
     padding: 1rem;
 }
 
-h1, p {
+h1,
+p {
     margin: auto;
 }
 
@@ -117,7 +110,8 @@ a {
     text-decoration: none;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: #DD4A4A;
 }
 
@@ -156,3 +150,72 @@ textarea {
     font-size: 16px;
 }
 
+@media screen and (max-width: 980px) {
+    body {
+        margin: 0 30% 0 5%;
+
+    }
+
+    header {
+        padding: 0 30% 0 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0 5% 0 5%;
+    }
+
+    header {
+        padding: 0 5% 0 5%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        margin: 0;
+    }
+
+    section {
+        margin: 0 5% 0 5%;
+        clear: both;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    header {
+        padding: 0;
+        text-align: center;
+        border: none;
+        position: static;
+    }
+
+    .name {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+
+    .navLinks {
+        width: 100%;
+        background: white;
+        margin: 0;
+        padding: 2%;
+        border-bottom: 2px solid #cccccc;
+    }
+
+    img {
+        width: 100%;
+        margin: 10px 10px 10px 40px;
+    }
+
+    .overlay {
+        width: 100%;
+        margin: 10px 10px 10px 40px;
+    }
+
+    footer {
+        position: static;
+    }
+
+}
